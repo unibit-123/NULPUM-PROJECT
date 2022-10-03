@@ -49,7 +49,6 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--color-white);
 }
 
 ul {
@@ -62,32 +61,37 @@ h1 {
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
     color: var(--color-black);
-    margin: 16px 0;
 }
 
 h2 {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
     color: var(--color-black);
-    margin: 8px 0;
 }
 
 h3{
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
     color: var(--color-black);
-    margin: 8px 0;
 }
 
 p {
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
     color: var(--color-black);
-    margin: 4px 0;
 }
 
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/* HEADER ZONE */
 
 #header {
+    margin: auto;
     height: 100vh;
     width: 100vw;
     align-items: center;
@@ -105,25 +109,33 @@ p {
     top: 0;
     left: 0;
     z-index: -1;
-    opacity: 0.9;
+    opacity: 1;
 }
 
 
 .menu {
     display: flex;
     align-items: center;
-    margin-bottom: 350px;
+    margin-bottom: 600px;
 }
 
 .menu-list {
-    margin: 0 65px;
+    font-size: 18px;
+    margin: 0 60px;
     color: white;
 }
 
+.menu-list a {
+    color: white;
+    cursor: pointer;
+}
+
 .menu-list:hover {
-    color: #2651A6;
-    transform: scale(1.15);
+    color: white;
+    transform: scale(1.1);
     transition: var(--animation-duration);
+    border-bottom: 1.7px solid #2651A6;
+    padding-bottom: 5px;
 }
 
 .logo {
@@ -131,8 +143,70 @@ p {
 }
 
 
+
+
+
+/* CAFES ZONE */
+
+#cafes {
+    margin: auto;
+}
+
+.cafes-title {
+    padding-top: 200px;
+    justify-content: center;
+    display: flex;
+}
+
+.cafes-store {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.img {
+    max-width: 500px;
+    max-height: 700px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+.dodam,
+.abel,
+.none {
+    text-align: center;
+}
+
+.dodam-address,
+.abel-address,
+.none-address {
+    letter-spacing: 2px;
+}
+
+.address-button {
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 3px;
+    background-color: #2651A6;
+    text-align: center;
+    text-decoration: none;
+    background-image: none;
+}
+
+.address-button:hover {
+    transform: scale(1.05);
+    background-color: #3774ec;
+    transition: var(--animation-duration);
+}
+
+
 #footer {
-    padding-top: 30px;
+    padding-top: 100px;
     padding-bottom: 20px;
 }
 
