@@ -93,6 +93,17 @@ button {
 
 /* HEADER ZONE */
 
+.section {
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+}
+
+.section__container {
+    max-width: 1500px;
+    margin: auto;
+}
+
 #header {
     margin: auto;
     height: 100vh;
@@ -173,7 +184,8 @@ button {
 /* CAFES ZONE */
 
 #cafes {
-    margin: 0;
+    margin: 0 auto;
+    padding: 0;
     padding-top: 200px;
     padding-bottom: 150px;
 }
