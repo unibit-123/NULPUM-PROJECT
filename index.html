@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
     <script src="https://kit.fontawesome.com/03e362b92b.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Karla:ital,wght@0,200;1,300&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +14,10 @@
     <!-- HEADER -->
     <section id="header">
         <ul class="menu">
-            <li class="menu-list HOME">
-                <a href="">HOME</a>
+            <li class="menu-list HOME" data-link="menu">
+                HOME
             </li>
-            <li class="menu-list CAFES">
+            <li class="menu-list CAFES" data-link="#cafes">
                 CAFES
             </li>
             <li class="menu-list-img">
@@ -24,10 +25,26 @@
                 <img src="./image/dodam-logo.png" alt="" class="logo">
                 </a>
             </li>
-            <li class="menu-list GALLERY">
+            <li class="menu-list GALLERY" data-link="#gallery">
                 GALLERY
             </li>
-            <li class="menu-list CONTACT">
+            <li class="menu-list CONTACT" data-link="contact">
+                CONTACT
+            </li>
+        </ul>
+
+        <!-- Toggle button -->
+        <ul class="menu-toggle">
+            <li class="toggle" data-link="menu">
+                HOME
+            </li>
+            <li class="toggle" data-link="#cafes">
+                CAFES
+            </li>
+            <li class="toggle" data-link="#gallery">
+                GALLERY
+            </li>
+            <li class="toggle" data-link="contact">
                 CONTACT
             </li>
         </ul>
@@ -40,7 +57,10 @@
         </h1>
         <div class="cafes-store">
             <div class="dodam">
-                <img src="./image/dodam.JPG" alt="" class="img dodam">
+                <div class="dodam-img-zone">
+                    <img src="./image/dodam.JPG" alt="" class="img-dodam">
+                    <img src="./image/dodam-hover.JPG" alt="" class="img-dodam-hover">
+                </div>
                 <div class="dodam-address">
                     <h2>DODAM</h2>
                     <h3>MON-SUN 12:00~18:00</h3>
@@ -49,7 +69,10 @@
                 </div>
             </div>
             <div class="abel">
-                <img src="./image/abel.JPG" alt="" class="img abel">
+                <div class="abel-img-zone">
+                    <img src="./image/abel.JPG" alt="" class="img-abel">
+                    <img src="./image/abel-hover.JPG" alt="" class="img-abel-hover">
+                </div>
                 <div class="abel-address">
                     <h2>ABEL</h2>
                     <h3>MON-SUN 12:00~19:00</h3>
@@ -59,7 +82,10 @@
             </div>
             <!-- 클래스명, 이름, 시간 수정 -->
             <div class="none">
-                <img src="./image/kobe.JPG" alt="" class="img none">
+                <div class="none-img-zone">
+                    <img src="./image/kobe.JPG" alt="" class="img-none">
+                    <img src="./image/dodam-hover.JPG" alt="" class="img-none-hover">
+                </div>
                 <div class="none-address">
                     <h2>KOBE</h2>
                     <h3>Preparing</h3>
@@ -76,26 +102,18 @@
                 <h1 class="gallery-name">GALLERY</h1>
             </div>
             <div class="gallery-photo-zone">
-                <ul>
-                    <li>
-                        <img src="./image/cake3.jpg" alt="">
-                        <img src="./image/cake3.jpg" alt="">
-                        <img src="./image/cake3.jpg" alt="">
-                        <img src="./image/cake3.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="./image/cake3.jpg" alt="">
-                        <img src="./image/cake3.jpg" alt="">
-                        <img src="./image/cake3.jpg" alt="">
-                        <img src="./image/cake3.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="./image/cake3.jpg" alt="">
-                        <img src="./image/cake3.jpg" alt="">
-                        <img src="./image/cake3.jpg" alt="">
-                        <img src="./image/cake3.jpg" alt="">
-                    </li>
-                </ul>
+                    <img src="./image/cake3.jpg" alt="">
+                    <img src="./image/cake3.jpg" alt="">
+                    <img src="./image/cake3.jpg" alt="">
+                    <img src="./image/cake3.jpg" alt="">
+                    <img src="./image/cake3.jpg" alt="">
+                    <img src="./image/cake3.jpg" alt="">
+                    <img src="./image/cake3.jpg" alt="">
+                    <img src="./image/cake3.jpg" alt="">
+                    <img src="./image/cake3.jpg" alt="">
+                    <img src="./image/cake3.jpg" alt="">
+                    <img src="./image/cake3.jpg" alt="">
+                    <img src="./image/cake3.jpg" alt="">  
             </div>
             <div class="yoyaku">
                 <span style="font-family: 'Noto Sans JP', sans-serif;">お問い合わせ & 予約はこちら</span>

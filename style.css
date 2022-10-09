@@ -53,8 +53,8 @@ a {
 }
 
 ul {
+    margin: auto;
     list-style: none;
-    padding-left: 0;
 } 
 
 /* Typography */
@@ -97,16 +97,14 @@ button {
     margin: auto;
     height: 100vh;
     width: 100vw;
-    align-items: center;
-    display: flex;
-    justify-content: center;
 }
 
 #header::after {
+    margin: auto;
     height: 100vh;
     width: 100vw;
     content: "";
-    background: url('./image/main-photo-1.JPG') center/cover no-repeat;
+    background: url('./image/main-photo-1-1.jpg') center/cover no-repeat;
     position: absolute;
     top: 0;
     left: 0;
@@ -116,15 +114,20 @@ button {
 
 
 .menu {
+    padding: 0;
     display: flex;
-    align-items: center;
-    margin-bottom: 600px;
+    justify-content: center;
+    padding-top: 50px;
 }
 
+
 .menu-list {
+    /* padding: 8px 10px; */
     font-size: 18px;
-    margin: 0 60px;
     color: white;
+    display: flex;
+    align-items: center;
+    margin: 90px;
 }
 
 .menu-list a {
@@ -134,27 +137,50 @@ button {
 
 .menu-list:hover {
     color: white;
-    transform: scale(1.1);
+    transform: scale(1.15);
     transition: var(--animation-duration);
-    border-bottom: 1.7px solid #2651A6;
-    padding-bottom: 5px;
+    /* border-bottom: 1.7px solid #2651A6; */
+    /* border-radius: 5px; */
+    /* border-color: white; */
+    /* background-color: #8caef3; */
+}
+
+.menu-list li :hover {
+    background-color: pink;
 }
 
 .logo {
-    width: 400px;
+    max-width: 1000px;
+    width: 360px;
+}
+
+.menu-toggle {
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin: 30px;
+    padding: 0;
+    color: white;
+    display: none;
+}
+
+.toggle {
+    padding-bottom: 30px;
+    font-size: 17px;
 }
 
 /* CAFES ZONE */
 
 #cafes {
-    margin: auto;
+    margin: 0;
     padding-top: 200px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
 
 .cafes-title {
     padding-bottom: 50px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,32 +194,39 @@ button {
 .cafes-store {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
-.img {
+.cafes-store img {
     max-width: 100%;
     max-height: 100%;
     width: 550px;
     height: 550px;
-    margin: 50px;
 }
 
-.dodam .img,
-.abel .img,
-.none .img {
-    transition: all 0.3s ease-in-out;
+.img-dodam-hover,
+.img-abel-hover,
+.img-none-hover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s linear;
 }
 
-.dodam .img:hover,
-.abel .img:hover,
-.none .img:hover {
-    transform: scale(1.1);
+
+
+.dodam-img-zone:hover .img-dodam-hover,
+.abel-img-zone:hover .img-abel-hover,
+.none-img-zone:hover .img-none-hover {
+    opacity: 1;
 }
 
 .dodam,
 .abel,
 .none {
+    margin: 50px;
+    position: relative;
     text-align: center;
 }
 
@@ -202,6 +235,8 @@ button {
 .none-address {
     padding-top: 30px;
     letter-spacing: 2px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .address-button {
@@ -227,14 +262,13 @@ button {
 /* gallery zone */
 
 #gallery {
-    margin: auto;
     padding-top: 100px;
     padding-bottom: 100px;
-    width: 100%;
-    height: 100%;
     text-align: center;
     position: relative;
     z-index: 1;
+    justify-content: center;
+    display: flex;
 }
 
 #gallery::after {
@@ -249,6 +283,10 @@ button {
     opacity: 0.1;
 }
 
+.gallery-zone {
+    max-width: 1500px;
+}
+
 .gallery-name {
     padding-bottom: 50px;
     margin: auto;
@@ -257,7 +295,7 @@ button {
     justify-content: center;
     text-transform: uppercase;
     border-bottom: 1.5px solid #2651A6;
-    border-width: 30%;
+    border-width: 100%;
     width: 40%;
 }
 
@@ -267,25 +305,29 @@ button {
 }
 
 .gallery-photo-zone {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.gallery-photo-zone li {
     margin: auto;
-    margin: 0 600px 0 600px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 50px;
 }
 
 .gallery-photo-zone img {
-    max-width: 100%;
-    max-height: 100%;
     border-radius: 2px;
     width: 300px;
-    margin: 40px;
+    margin: 30px;
 }
+
 
 .yoyaku {
     display: flex;
     justify-content: center;
     font-weight: 400;
+    padding-top: 10px;
 }
 
 .yoyaku span {
@@ -327,9 +369,9 @@ button {
 }
 
 .contact-img img{
+    max-width: 100%;
     opacity: 0.9;
-    max-width: 1500px;
-    width: 1500px;
+    width: 850px;
 }
 
 .email-insta {
@@ -388,4 +430,55 @@ button {
     text-align: center;
     line-height: 50px;
     font-family: 'Noto Sans JP', sans-serif;;
+}
+
+
+
+
+
+/* For below 1595px screen width */
+@media screen and (max-width: 1210px) {
+
+    :root {
+        /* Font size */
+        --font-large: 30px;
+        --font-medium: 18px;
+        --font-regular: 16px;
+        --font-small: 14px;
+        --font-micro: 12px;
+        }
+    
+
+    .cafes-store {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        width: 550px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .menu img {
+        width: 270px;
+    }
 }
