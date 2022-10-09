@@ -459,13 +459,23 @@ button {
         --font-micro: 12px;
         }
     
-
+    
     .cafes-store {
         flex-direction: column;
         margin: auto;
     }
 
+    .cafes-store img {
+        width: 400px;
+        height: 450px;
+    }
 
+    .img-dodam-hover,
+    .img-abel-hover,
+    .img-none-hover {
+        display: none;
+    }
+    
     #header {
         flex-direction: column;
         align-items: flex-start;
@@ -487,6 +497,6 @@ button {
     }
 
     .menu img {
-        width: 270px;
+        width: 240px;
     }
 }
