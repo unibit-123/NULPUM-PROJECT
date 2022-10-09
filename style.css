@@ -93,7 +93,7 @@ button {
 
 /* HEADER ZONE */
 
-.section {
+/* .section {
     text-align: center;
     padding: 50px;
     margin: auto;
@@ -102,7 +102,7 @@ button {
 .section__container {
     max-width: 1500px;
     margin: auto;
-}
+} */
 
 #header {
     margin: auto;
@@ -192,7 +192,7 @@ button {
 
 .cafes-title {
     padding-bottom: 50px;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,7 +225,6 @@ button {
     opacity: 0;
     transition: opacity 0.5s linear;
 }
-
 
 
 .dodam-img-zone:hover .img-dodam-hover,
@@ -463,12 +462,9 @@ button {
 
     .cafes-store {
         flex-direction: column;
-        text-align: center;
-        width: 100%;
-        width: 550px;
-        margin-right: auto;
-        margin-left: auto;
+        margin: auto;
     }
+
 
     #header {
         flex-direction: column;
