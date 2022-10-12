@@ -105,7 +105,7 @@ button {
 } */
 
 #header {
-    margin: auto;
+    margin: 0;
     height: 100vh;
     width: 100vw;
 }
@@ -125,10 +125,13 @@ button {
 
 
 .menu {
+    width: 100%;
     padding: 0;
     display: flex;
     justify-content: center;
     padding-top: 40px;
+    /* position: fixed; */
+    /* z-index: 1; */
 }
 
 
@@ -162,7 +165,7 @@ button {
 
 .logo {
     max-width: 1000px;
-    width: 360px;
+    width: 300px;
 }
 
 .menu-toggle {
@@ -396,7 +399,7 @@ button {
 
 .contact-info {
     margin: auto;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     line-height: 30px;
     word-spacing: 3px;
 }
@@ -410,10 +413,28 @@ button {
     font-size: 20px;
 }
 
+.email-zone,
+.insta-zone {
+    padding-top: 5px;
+}
+
 .email-zone a,
 .insta-zone a {
     color: #616161;
 }
+
+.contact-insta-zone a:hover > .fab {
+    color: #cd486b; 
+}
+
+.email-zone .contact-mail:hover > .fab {
+    color: #3774ec;
+}
+
+.insta-zone a:hover > .fab {
+    color: #cd486b;
+}
+
 
 /* footer zone */
 
